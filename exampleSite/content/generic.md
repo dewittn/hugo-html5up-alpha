@@ -2,7 +2,7 @@
 Title: "This Is A Generic Page"
 description: "Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros."
 date: "2019-02-06T00:00:00"
-image: 'images/pic02.jpg'
+image: 'images/pic01.jpg'
 tags: ["tag1","tag2"]
 ---
 

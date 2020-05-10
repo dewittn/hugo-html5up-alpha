@@ -1,0 +1,12 @@
+{{ define "main" }}
+<header>
+  <h2>{{ .Title }}</h2>
+  <p>{{ .Description }}</p>
+</header>
+<div class="box">
+  {{ with .Params.image }}
+  <span class="image featured"><img src="{{ . | relURL }}" alt="" /></span>
+  {{ end }}
+  {{ .Content }}
+</div>
+{{ end }}

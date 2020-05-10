@@ -5,6 +5,13 @@ theme = "hugo-html5up-alpha"
 googleanalytics = ""
 disqusShortname = ""
 
+[params]
+  description = "Another fine responsive site template freebie by HTML5 UP."
+  images = ["images/pic01.jpg"]
+  author = "Themefisher"
+  copyright = "© Untitled. All rights reserved."
+  design = "Desing: [HTML5 UP](http://html5up.net/) | Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)."
+  
 # For Pages the .RelPermalink must match the menu .URL 
 # For sections the name/directory must match the menu .Identifier
 [menu]
@@ -52,12 +59,22 @@ disqusShortname = ""
     name = "Option Four"
     url = "#"
     weight = 44
-    
-# [params]
-  # set below parameter to define a favicon
-  # favicon = "favicon.ico"
-  # set to change date format
-  # dateFormat = "2.1.2006"
+
+### Social Media Links ###
+[[params.share]]
+title = "facebook"
+icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
+link = "https://www.facebook.com/"
+
+[[params.share]]
+title = "twitter"
+icon = "fa-twitter" 
+link = "https://twitter.com/"
+
+[[params.share]]
+title = "linkedin"
+icon = "fa-linkedin" 
+link = "https://www.linkedin.com"
 
 # Below parameters can be set to override default post settings
 [params.posts]

@@ -1,0 +1,43 @@
+### highlight ###
+highlight:
+  enable: true
+  header: "Introducing the ultimate mobile app <br /> for doing stuff with your phone"
+  content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br /> adipiscing nunc adipiscing. Condimentum turpis massa."
+  image: "images/pic01.jpg"
+  
+### features ###
+features:
+  enable: true
+  rows:  
+    - items:
+      - title: "Magna etiam"
+        icon: "fa-bolt"
+        accent: "accent2" #accent values are 1-8
+        content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
+      - title: "Ipsum dolor"
+        icon: "fa-chart-area"
+        accent: "accent3" #accent values are 1-8
+        content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
+    - items:
+        - title: "Sed feugiat"
+          icon: "fa-cloud"
+          accent: "accent4" #accent values are 1-8
+          content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
+        - title: "Enim phasellus"
+          icon: "fa-lock"
+          accent: "accent5" #accent values are 1-8
+          content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
+
+### Blog ###
+blog:
+  enable: true
+  # Leave header text blank to remove entire <section>
+  header: "Recent Posts"
+  buttonText: "Read More"
+  postCount: 2
+
+### Call to Action ###
+cta:
+  enable: true
+  header: "Sign up for beta access"
+  content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc."

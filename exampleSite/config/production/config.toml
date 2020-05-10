@@ -1,0 +1,3 @@
+# All other settings are inherited from _default/config.toml
+# This way you can run a development and production versions without rewriting the config file
+baseURL = "https://hugo-theme-massively.netlify.com/"

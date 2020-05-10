@@ -1,0 +1,34 @@
+languageCode = "en-us"
+title = "Alpha by HTML5 UP"
+baseURL = "http://localhost:1313/"
+theme = "hugo-html5up-alpha"
+googleanalytics = ""
+disqusShortname = ""
+
+# For Pages the .RelPermalink must match the menu .URL 
+# For sections the name/directory must match the menu .Identifier
+[menu]
+  [[menu.main]]
+    identifier = "generic"
+    name = "Generic Page"
+    url = "/generic/"
+    weight = 20
+  [[menu.main]]
+    identifier = "elements"
+    name = "Elements Reference"
+    url = "/elements/"
+    weight = 50
+
+# [params]
+  # set below parameter to define a favicon
+  # favicon = "favicon.ico"
+  # set to change date format
+  # dateFormat = "2.1.2006"
+
+# Below parameters can be set to override default post settings
+[params.posts]
+#     folderName = "posts"
+#     pageSize = "6"
+#     featuredPost = false
+#     paginationPages = 2
+#     showFirstLast = false

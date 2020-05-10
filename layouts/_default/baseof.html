@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
+    <head>
+        {{- partial "head.html" . -}}
+    </head>
+    <body class="landing is-preload">
+        <div id="page-wrapper">
+            {{- partial "header.html" . -}}
+            {{- block "main" . }}{{- end }}
+            {{- partial "footer.html" . -}}
         </div>
-        {{- partial "footer.html" . -}}
+        {{- partial "scripts.html" . -}}
     </body>
 </html>

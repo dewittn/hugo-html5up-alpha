@@ -1,0 +1,15 @@
+{{ define "main" }}
+<header>
+  <h2>{{ .Title }}</h2>
+  <p>{{ .Description }}</p>
+</header>
+{{ range .Pages }}
+<div class="row">
+  <div class="col-12">
+    <section class="box">
+      {{ .Content }}
+    </section>
+  </div>
+</div>
+{{ end }}
+{{ end }}

@@ -1,0 +1,7 @@
+<div class="box alt">
+  <div class="row gtr-50 gtr-uniform">
+    {{ range $.Page.Resources.ByType "image" }}
+    <div class="col-4"><span class="image fit"><img src="{{ .Permalink }}" alt="" /></span></div>
+    {{ end }}
+  </div>
+</div>

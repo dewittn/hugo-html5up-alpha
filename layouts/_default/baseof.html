@@ -6,7 +6,7 @@
     <body class="is-preload">
         <div id="page-wrapper">
             {{- partial "header.html" . -}}
-            <section id="main" class="container">
+            <section id="main" class="container {{ with .Params.size }}{{ . }}{{ end }}">
                 {{- block "main" . }}{{- end }}
             </section>
             {{- partial "footer.html" . -}}

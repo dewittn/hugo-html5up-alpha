@@ -1,11 +1,23 @@
-### highlight ###
+### Banner ###
+banner:
+  enable: true
+  title: "Alpha"
+  content: "Another fine responsive site template freebie by HTML5 UP."
+  buttons:
+    - title: "Sign Up"
+      link: "#"
+      class: "primary"
+    - title: "Learn More"
+      link: "#"
+
+### Highlight ###
 highlight:
   enable: true
   header: "Introducing the ultimate mobile app <br /> for doing stuff with your phone"
   content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br /> adipiscing nunc adipiscing. Condimentum turpis massa."
   image: "images/pic01.jpg"
   
-### features ###
+### Features ###
 features:
   enable: true
   rows:  

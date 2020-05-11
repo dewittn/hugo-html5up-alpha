@@ -12,6 +12,7 @@ disqusShortname = ""
   copyright = "© Untitled. All rights reserved."
   design = "Desing: [HTML5 UP](http://html5up.net/) | Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)."
   
+  
 # For Pages the .RelPermalink must match the menu .URL 
 # For sections the name/directory must match the menu .Identifier
 [menu]

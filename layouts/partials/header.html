@@ -1,6 +1,6 @@
 <!-- Header -->
 <header id="header" {{- if .IsHome -}}class="alt"{{- end -}}>
-    <h1><a href="index.html">Alpha</a> by HTML5 UP</h1>
+    <h1>{{ with .Site.Data.globalheader.title }}{{ . | markdownify }}{{else}}{{ .Site.Title }}{{end}}</h1>
     <nav id="nav">
         <ul>
             <li><a href="{{ .Site.BaseURL }}">Home</a></li>
@@ -23,7 +23,10 @@
                     {{- end -}}
                 </ul>
             </li>
-            <li><a href="#" class="button">Sign Up</a></li>
+            {{ $button := .Site.Data.globalheader.button }}
+            {{ if $button.enable }}
+            <li><a href="{{ $button.link }}" class="button">{{ $button.title }}</a></li>
+            {{ end }}
         </ul>
     </nav>
 </header>

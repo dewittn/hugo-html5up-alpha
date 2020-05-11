@@ -7,16 +7,20 @@
     <body class="landing is-preload">
         <div id="page-wrapper">
             {{- partial "header.html" . -}}
+            
             <!-- Banner -->
             <section id="banner">
-                <h2>{{ .Site.Title }}</h2>
-                {{ with .Site.Params.description }}
-                <p>{{ . }}</p>
-                {{ end }}
+            {{ if .Site.Data.homepage.banner.enable }}
+            {{ with .Site.Data.homepage.banner }}
+                <h2>{{ .title }}</h2>
+                <p>{{ .content }}</p>
                 <ul class="actions special">
-                    <li><a href="#" class="button primary">Sign Up</a></li>
-                    <li><a href="#" class="button">Learn More</a></li>
+                {{ range .buttons }}
+                    <li><a href="{{ .link }}" class="button {{ .class }}">{{ .title }}</a></li>
+                {{ end }}
                 </ul>
+            {{ end }}
+            {{ end }}
             </section>
             
             <!-- Main -->

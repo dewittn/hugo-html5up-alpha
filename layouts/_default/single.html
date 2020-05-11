@@ -4,10 +4,11 @@
     <p>{{ .Date.Format "Jan 2, 2006" }}</p>
   </header>
   <div class="box">
-    {{ with .Params.image }}
-    <span class="image featured"><img src="{{ . | relURL }}" alt="" /></span>
+    {{ with partial "bannerURL" . }}
+    <span class="image featured"><img src="{{ . }}" alt="" /></span>
     {{ end }}
     {{ .Content }}
+    {{ partial "tags" . }}
   </div>
   {{ if .Site.DisqusShortname }}
   <div class="box">

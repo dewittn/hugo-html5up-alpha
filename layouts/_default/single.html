@@ -1,12 +1,17 @@
 {{ define "main" }}
-<header>
-  <h2>{{ .Title }}</h2>
-  <p>{{ .Description }}</p>
-</header>
-<div class="box">
-  {{ with .Params.image }}
-  <span class="image featured"><img src="{{ . | relURL }}" alt="" /></span>
+  <header>
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Date.Format "Jan 2, 2006" }}</p>
+  </header>
+  <div class="box">
+    {{ with .Params.image }}
+    <span class="image featured"><img src="{{ . | relURL }}" alt="" /></span>
+    {{ end }}
+    {{ .Content }}
+  </div>
+  {{ if .Site.DisqusShortname }}
+  <div class="box">
+    {{ template "_internal/disqus.html" . }}
+  </div>
   {{ end }}
-  {{ .Content }}
-</div>
 {{ end }}

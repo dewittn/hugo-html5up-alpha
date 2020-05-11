@@ -57,12 +57,10 @@
                 <!-- Posts -->
                 {{ if .Site.Data.homepage.blog.enable }}
                 {{ with $blogSettings := .Site.Data.homepage.blog }}
-                  {{ with .header }}
-                  <section class="box special">
-                      <header class="major">
-                          <h2>{{ . }}</h2>
-                      </header>
-                  </section>
+                  {{ with .header }}                  
+                  <header class="major">
+                      <h2>{{ . }}</h2>
+                  </header>
                   {{ end }}
                   <div class="row">
                       {{ range first .postCount (where $.Site.RegularPages "Type" "posts") }}

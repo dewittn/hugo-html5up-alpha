@@ -4,7 +4,7 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
-@import url('fontawesome-all.min.css');
+@import url('css/fontawesome-all.min.css');
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 
 /*
@@ -245,6 +245,14 @@
 		margin: 0 0 _size(element-margin) 0;
 		overflow-x: auto;
 		padding: 1em 1.5em;
+		& code {
+			border: solid 0px _palette(border);
+			font-family: _font(family-fixed);
+			font-size: 0.9em;
+			line-height: 1.75em;
+			margin: 0 0 _size(element-margin) 0;
+			overflow-x: auto;
+		}
 	}
 
 	code {

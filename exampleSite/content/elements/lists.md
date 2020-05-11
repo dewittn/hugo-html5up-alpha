@@ -23,26 +23,29 @@ weight = 20
 #### Actions
 
 {{< button-group class="" >}}
-    {{< button title="PRIMARY" link= "#actions" class="primary" >}}
-    {{< button title="DEFAULT" link= "#actions" class="" >}}
+    {{< button title="Primary" link= "#actions" class="primary" >}}
+    {{< button title="Default" link= "#actions" class="" >}}
+    {{< button title="Alt" link= "#actions" class="alt" >}}
 {{< /button-group >}}
 
 {{< button-group class="small" >}}
-    {{< button title="SMALL" link= "#actions" class="primary small" >}}
-    {{< button title="SMALL" link= "#actions" class="small" >}}
+    {{< button title="Small" link= "#actions" class="primary small" >}}
+    {{< button title="Small" link= "#actions" class="small" >}}
+    {{< button title="Small" link= "#actions" class="small alt" >}}
 {{< /button-group >}}
 
 {{< button-group class="stacked" >}}
-    {{< button title="PRIMARY" link= "#actions" class="primary" >}}
-    {{< button title="DEFAULT" link= "#actions" class="" >}}
+    {{< button title="Primary" link= "#actions" class="primary" >}}
+    {{< button title="Default" link= "#actions" class="" >}}
+    {{< button title="Alt" link= "#actions" class="alt" >}}
 {{< /button-group >}}
 
 {{< button-group class="fit" >}}
-    {{< button title="DEFAULT" link= "#actions" class="primary" >}}
-    {{< button title="SMALL" link= "#actions" class="primary small" >}}
+    {{< button title="Primary" link= "#actions" class="primary" >}}
+    {{< button title="Small" link= "#actions" class="primary small" >}}
 {{< /button-group >}}
 
 {{< button-group class="fit" >}}
-    {{< button title="DEFAULT" link= "#actions" class="" >}}
-    {{< button title="SMALL" link= "#actions" class="small" >}}
+    {{< button title="Default" link= "#actions" class="" >}}
+    {{< button title="Small" link= "#actions" class="small" >}}
 {{< /button-group >}}

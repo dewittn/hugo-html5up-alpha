@@ -6,6 +6,14 @@
         {{ end }}
     </ul>
     <ul class="copyright">
-        <li>{{ .Site.Params.copyright }}</li><li>{{ .Site.Params.design | markdownify }}</li>
+        {{ with .Site.Params.copyright }}
+        <li>{{ . | markdownify }}</li>
+        {{ end }}
+        {{ with .Site.Params.design }}
+        <li>{{ . | markdownify }}</li>
+        {{ end }}
+        {{ with .Site.Params.author }}
+        <li>{{ . | markdownify }}</li>
+        {{ end }}
     </ul>
 </footer>

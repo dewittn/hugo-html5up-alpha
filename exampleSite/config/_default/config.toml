@@ -8,9 +8,10 @@ disqusShortname = ""
 [params]
   description = "Another fine responsive site template freebie by HTML5 UP."
   images = ["images/pic01.jpg"]
-  author = "Themefisher"
+  author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
-  design = "Desing: [HTML5 UP](http://html5up.net/) | Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)."
+  design = "Design: [HTML5 UP](http://html5up.net/)"
+  mainSections = ["blog"]
   
   
 # For Pages the .RelPermalink must match the menu .URL 

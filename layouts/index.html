@@ -70,7 +70,9 @@
                       {{ range first .postCount (where $.Site.RegularPages "Type" "blog") }}
                           <div class="col-6 col-12-narrower">
                               <section class="box special">
-                                  <span class="image featured"><img src="{{ .Params.image }}" alt="" /></span>
+                                  {{ with partial "bannerURL" . }}
+                                  <span class="image featured"><img src="{{ . }}" alt="" /></span>
+                                  {{ end }}
                                   <h3>{{ .Title }}</h3>
                                   {{ with .Date }}<p>{{ .Format "Jan 2, 2006" }}</p>{{ end }}
                                   {{ with .Description }}

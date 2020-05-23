@@ -1,16 +1,13 @@
-# Basic settings are inherited from _default/config.toml
-baseURL = "https://example.com"
+# Settings not listed here are inherited from `_default/config.toml`
+## This is a more complete example of the themes capabilities that will load with 'hugo server'
+baseURL = "http://localhost:1313/"
 
 [params]
-  description = "Test Another fine responsive site template freebie by HTML5 UP."
-  images = ["images/pic01.jpg"]
-  author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
-  copyright = "© Untitled. All rights reserved."
-  design = "Design: [HTML5 UP](http://html5up.net/)"
   mainSections = ["blog"]
 
-# For Pages the .RelPermalink must match the menu .URL
-# For sections the name/directory must match the menu .Identifier
+## Everything below is spesific to the content in the local `exampleSite` directory
+### For Pages the .RelPermalink must match the menu .URL
+### For sections the name/directory must match the menu .Identifier
 [menu]
   [[menu.main]]
     identifier = "generic"

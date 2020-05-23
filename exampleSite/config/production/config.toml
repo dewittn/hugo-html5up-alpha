@@ -1,3 +1,60 @@
 # All other settings are inherited from _default/config.toml
-# This way you can run a development and production versions without rewriting the config file
+## This is the config file used for the live demo located at URL below
 baseURL = "https://hugo-html5up-alpha.nelsonroberto.com/"
+
+[params]
+  mainSections = ["blog"]
+
+## Everything below is spesific to the content in the local `exampleSite` directory
+### For Pages the .RelPermalink must match the menu .URL
+### For sections the name/directory must match the menu .Identifier
+[menu]
+  [[menu.main]]
+    identifier = "generic"
+    name = "Generic"
+    url = "/generic/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 20
+  [[menu.main]]
+    identifier = "elements"
+    name = "Elements"
+    url = "/elements/"
+    weight = 30
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+  [[menu.main]]
+    identifier = "submenu"
+    name = "Submenu"
+    url = "#"
+    weight = 50
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "one"
+    name = "Option One"
+    url = "#"
+    weight = 51
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "two"
+    name = "Option Two"
+    url = "#"
+    weight = 52
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "three"
+    name = "Option Three"
+    url = "#"
+    weight = 53
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "four"
+    name = "Option Four"
+    url = "#"
+    weight = 54

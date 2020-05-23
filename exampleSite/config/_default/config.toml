@@ -1,5 +1,5 @@
-## This the default config file that is setup to run with the hugoBasicExample content
-## For a more detailed example of the themes capabilities look at development/config.toml
+# This the default config from which all other configurations inherit
+## For a more detailed example of the themes capabilities look at "development/config.toml"
 languageCode = "en-us"
 title = "Alpha by HTML5 UP"
 baseURL = "https://example.com"
@@ -15,6 +15,24 @@ disqusShortname = ""
   design = "Design: [HTML5 UP](http://html5up.net/)"
   mainSections = ["post"]
 
+### Footer Social Media Links ###
+[[params.share]]
+title = "facebook"
+icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
+link = "https://www.facebook.com/"
+
+[[params.share]]
+title = "twitter"
+icon = "fa-twitter"
+link = "https://twitter.com/"
+
+[[params.share]]
+title = "linkedin"
+icon = "fa-linkedin"
+link = "https://www.linkedin.com"
+
+
+## Everything below this is specific to the hugoBasicExample
 [menu]
   [[menu.main]]
     identifier = "about"

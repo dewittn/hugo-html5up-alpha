@@ -1,92 +1,83 @@
+## This the default config file that is setup to run with the hugoBasicExample content
+## For a more detailed example of the themes capabilities look at development/config.toml
 languageCode = "en-us"
 title = "Alpha by HTML5 UP"
-baseURL = "http://localhost:1313/"
+baseURL = "https://example.com"
 theme = "hugo-html5up-alpha"
 googleanalytics = ""
 disqusShortname = ""
 
 [params]
-  description = "Another fine responsive site template freebie by HTML5 UP."
+  description = "Test Another fine responsive site template freebie by HTML5 UP."
   images = ["images/pic01.jpg"]
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
   design = "Design: [HTML5 UP](http://html5up.net/)"
-  mainSections = ["blog"]
-  
-  
-# For Pages the .RelPermalink must match the menu .URL 
-# For sections the name/directory must match the menu .Identifier
+  mainSections = ["post"]
+
 [menu]
   [[menu.main]]
-    identifier = "generic"
-    name = "Generic"
-    url = "/generic/"
+    identifier = "about"
+    name = "About"
+    url = "/about/"
     weight = 10
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 20
-  [[menu.main]]
-    identifier = "elements"
-    name = "Elements"
-    url = "/elements/"
-    weight = 30
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "/blog/"
-    weight = 40
+    url = "/post/"
+    weight = 20
   [[menu.main]]
-    identifier = "submenu"
-    name = "Submenu"
+    identifier = "taxonomies"
+    name = "Taxonomies"
     url = "#"
-    weight = 50
+    weight = 30
   [[menu.main]]
-    parent = "submenu"
-    identifier = "one"
-    name = "Option One"
-    url = "#"
-    weight = 51
+    parent = "taxonomies"
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 31
   [[menu.main]]
-    parent = "submenu"
-    identifier = "two"
-    name = "Option Two"
-    url = "#"
-    weight = 52
+    parent = "taxonomies"
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 31
   [[menu.main]]
-    parent = "submenu"
-    identifier = "three"
-    name = "Option Three"
-    url = "#"
-    weight = 53
-  [[menu.main]]
-    parent = "submenu"
-    identifier = "four"
-    name = "Option Four"
-    url = "#"
-    weight = 54
+    parent = "taxonomies"
+    identifier = "series"
+    name = "Series"
+    url = "/series/"
+    weight = 33
 
-### Social Media Links ###
-[[params.share]]
-title = "facebook"
-icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
-link = "https://www.facebook.com/"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
 
-[[params.share]]
-title = "twitter"
-icon = "fa-twitter" 
-link = "https://twitter.com/"
+[privacy]
 
-[[params.share]]
-title = "linkedin"
-icon = "fa-linkedin" 
-link = "https://www.linkedin.com"
+  [privacy.vimeo]
+    disabled = false
+    simple = true
 
-# Below parameters can be set to override default post settings
-[params.posts]
-#     folderName = "posts"
-#     pageSize = "6"
-#     featuredPost = false
-#     paginationPages = 2
-#     showFirstLast = false
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

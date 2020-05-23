@@ -7,13 +7,13 @@
     <body class="landing is-preload">
         <div id="page-wrapper">
             {{- partial "header.html" . -}}
-            
+
             <!-- Banner -->
             <section id="banner">
             {{ if .Site.Data.homepage.banner.enable }}
             {{ with .Site.Data.homepage.banner }}
                 <h2>{{ .title }}</h2>
-                <p>{{ .content }}</p>
+                <p>{{ with .content }}{{ . }}{{else}}{{ $.Site.Params.description }}{{end}}</p>
                 <ul class="actions special">
                 {{ range .buttons }}
                     <li><a href="{{ .link }}" class="button {{ .class }}">{{ .title }}</a></li>
@@ -22,7 +22,7 @@
             {{ end }}
             {{ end }}
             </section>
-            
+
             <!-- Main -->
             <section id="main" class="container">
                 <!-- Highlight -->
@@ -38,8 +38,8 @@
                     </section>
                 {{ end }}
                 {{ end }}
-                
-                <!-- Features -->               
+
+                <!-- Features -->
                 {{ if .Site.Data.homepage.features.enable }}
                 {{ with .Site.Data.homepage.features }}
                     <section class="box special features">
@@ -57,11 +57,11 @@
                     </section>
                 {{ end }}
                 {{ end }}
-            
+
                 <!-- Posts -->
                 {{ if .Site.Data.homepage.blog.enable }}
                 {{ with $blogSettings := .Site.Data.homepage.blog }}
-                  {{ with .header }}                  
+                  {{ with .header }}
                   <header class="major">
                       <h2>{{ . }}</h2>
                   </header>
@@ -90,7 +90,7 @@
                 {{ end }}
                 {{ end }}
             </section>
-            
+
             <!-- CTA -->
             {{ if .Site.Data.homepage.cta.enable }}
             {{ with .Site.Data.homepage.cta}}
@@ -110,7 +110,7 @@
                 </section>
             {{ end }}
             {{ end }}
-            
+
             {{- partial "footer.html" . -}}
         </div>
         {{- partial "scripts.html" . -}}

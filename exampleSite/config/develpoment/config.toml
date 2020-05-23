@@ -1,18 +1,13 @@
-languageCode = "en-us"
-title = "Alpha by HTML5 UP"
+# Basic settings are inherited from _default/config.toml
 baseURL = "https://example.com"
-theme = "hugo-html5up-alpha"
-googleanalytics = ""
-disqusShortname = ""
 
 [params]
-  description = "Another fine responsive site template freebie by HTML5 UP."
+  description = "Test Another fine responsive site template freebie by HTML5 UP."
   images = ["images/pic01.jpg"]
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
   design = "Design: [HTML5 UP](http://html5up.net/)"
-  mainSections = ["posts"]
-
+  mainSections = ["blog"]
 
 # For Pages the .RelPermalink must match the menu .URL
 # For sections the name/directory must match the menu .Identifier
@@ -66,27 +61,3 @@ disqusShortname = ""
     name = "Option Four"
     url = "#"
     weight = 54
-
-### Social Media Links ###
-[[params.share]]
-title = "facebook"
-icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
-link = "https://www.facebook.com/"
-
-[[params.share]]
-title = "twitter"
-icon = "fa-twitter"
-link = "https://twitter.com/"
-
-[[params.share]]
-title = "linkedin"
-icon = "fa-linkedin"
-link = "https://www.linkedin.com"
-
-# Below parameters can be set to override default post settings
-[params.posts]
-#     folderName = "posts"
-#     pageSize = "6"
-#     featuredPost = false
-#     paginationPages = 2
-#     showFirstLast = false

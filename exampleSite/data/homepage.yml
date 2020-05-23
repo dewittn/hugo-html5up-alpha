@@ -2,7 +2,7 @@
 banner:
   enable: true
   title: "Alpha"
-  content: "Another fine responsive site template freebie by HTML5 UP."
+  content: "" # Change this if you want something other then the site description
   buttons:
     - title: "Sign Up"
       link: "#"
@@ -16,11 +16,11 @@ highlight:
   header: "Introducing the ultimate mobile app <br /> for doing stuff with your phone"
   content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br /> adipiscing nunc adipiscing. Condimentum turpis massa."
   image: "images/pic01.jpg"
-  
+
 ### Features ###
 features:
   enable: true
-  rows:  
+  rows:
     - items:
       - title: "Magna etiam"
         icon: "fa-bolt"

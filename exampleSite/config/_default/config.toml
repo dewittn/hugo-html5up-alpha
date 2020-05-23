@@ -8,12 +8,12 @@ googleanalytics = ""
 disqusShortname = ""
 
 [params]
-  description = "Test Another fine responsive site template freebie by HTML5 UP."
+  description = "Another fine responsive site template freebie by HTML5 UP."
   images = ["images/pic01.jpg"]
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
   design = "Design: [HTML5 UP](http://html5up.net/)"
-  mainSections = ["post"]
+  mainSections = ["blog"]
 
 ### Footer Social Media Links ###
 [[params.share]]
@@ -30,72 +30,3 @@ link = "https://twitter.com/"
 title = "linkedin"
 icon = "fa-linkedin"
 link = "https://www.linkedin.com"
-
-
-## Everything below this is specific to the hugoBasicExample
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/post/"
-    weight = 20
-  [[menu.main]]
-    identifier = "taxonomies"
-    name = "Taxonomies"
-    url = "#"
-    weight = 30
-  [[menu.main]]
-    parent = "taxonomies"
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 31
-  [[menu.main]]
-    parent = "taxonomies"
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 31
-  [[menu.main]]
-    parent = "taxonomies"
-    identifier = "series"
-    name = "Series"
-    url = "/series/"
-    weight = 33
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
-
-[privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true

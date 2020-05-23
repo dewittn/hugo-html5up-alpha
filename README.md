@@ -2,7 +2,7 @@
 
 Hugo HTML5up Alpha is a port of the [Alpha by HTML5 UP](https://html5up.net/alpha) template. It is designed to mirror the look and feel of the original template as closely as possible, while taking advantage of all the best features Hugo has to offer.
 
- ![](images/screenshot.png)
+ ![](https://github.com/dewittn/hugo-html5up-alpha/blob/master/images/screenshot.png)
 
  ## Features
 

@@ -1,8 +1,7 @@
-# Settings not listed here are inherited from `_default/config.toml`
-## This is a more complete example of the themes capabilities that will load with 'hugo server'
+# All other settings are inherited from _default/config.toml
+## This is the config file used for the live demo located at URL below
+baseURL = "https://hugo-html5up-alpha.nelsonroberto.com/"
 
-### For Pages the .RelPermalink must match the menu .URL
-### For sections the name/directory must match the menu .Identifier
 [menu]
   [[menu.main]]
     identifier = "generic"

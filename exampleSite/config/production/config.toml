@@ -2,6 +2,7 @@
 baseURL = "https://example.com"
 
 [params]
+  description = "A Hugo port of the HTML5 UP Alpha template"
   mainSections = ["post"]
 
 [menu]

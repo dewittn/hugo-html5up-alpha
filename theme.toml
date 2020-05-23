@@ -2,13 +2,13 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "hugo-html5up-alpha"
-license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
-min_version = "0.41.0"
+license = "Creative Commons"
+licenselink = "https://github.com/dewittn/hugo-html5up-alpha/blob/master/LICENSE"
+description = "A hugo port of the HTML5 UP Alpha Template."
+homepage = "http://nelsonroberto.com/"
+tags = ["blog", "html5up","responsive"]
+features = ["blog",]
+min_version = "0.70.0"
 
 [author]
   name = "Nelson/Roberto"

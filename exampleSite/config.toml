@@ -1,0 +1,85 @@
+####### This is an EXAMPLE config file!!
+####### Changes made here will not effect demo site
+
+languageCode = "en-us"
+title = "Alpha by HTML5 UP"
+baseURL = "https://example.com"
+theme = "hugo-html5up-alpha"
+disqusShortname = ""
+
+[params]
+  description = "Another fine responsive site template freebie by HTML5 UP."
+  images = ["images/pic01.jpg"]
+  author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
+  copyright = "© Untitled. All rights reserved."
+  design = "Design: [HTML5 UP](http://html5up.net/)"
+  mainSections = ["blog"]
+
+### Footer Social Media Links ###
+[[params.share]]
+title = "facebook"
+icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
+link = "https://www.facebook.com/"
+
+[[params.share]]
+title = "twitter"
+icon = "fa-twitter"
+link = "https://twitter.com/"
+
+[[params.share]]
+title = "linkedin"
+icon = "fa-linkedin"
+link = "https://www.linkedin.com"
+
+### For Pages the .RelPermalink must match the menu .URL
+### For sections the name/directory must match the menu .Identifier
+[menu]
+  [[menu.main]]
+    identifier = "generic"
+    name = "Generic"
+    url = "/generic/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 20
+  [[menu.main]]
+    identifier = "elements"
+    name = "Elements"
+    url = "/elements/"
+    weight = 30
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+  [[menu.main]]
+    identifier = "submenu"
+    name = "Submenu"
+    url = "#"
+    weight = 50
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "one"
+    name = "Option One"
+    url = "#"
+    weight = 51
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "two"
+    name = "Option Two"
+    url = "#"
+    weight = 52
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "three"
+    name = "Option Three"
+    url = "#"
+    weight = 53
+  [[menu.main]]
+    parent = "submenu"
+    identifier = "four"
+    name = "Option Four"
+    url = "#"
+    weight = 54

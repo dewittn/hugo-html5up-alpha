@@ -4,7 +4,6 @@ languageCode = "en-us"
 title = "Alpha by HTML5 UP"
 baseURL = "https://example.com"
 theme = "hugo-html5up-alpha"
-googleanalytics = ""
 disqusShortname = ""
 
 [params]

@@ -1,57 +1,144 @@
- # Hugo HTML5up Alpha
+# Hugo HTML5up Alpha
 
-Hugo HTML5up Alpha is a port of the static html template [Alpha by HTML5 UP](https://html5up.net/alpha). It is designed to mirror the look and feel of the original template as closely as possible, while taking advantage of all the best features Hugo has to offer.
+Hugo HTML5up Alpha is a port of the static HTML template [Alpha by HTML5 UP](https://html5up.net/alpha). It is designed to mirror the look and feel of the original template as closely as possible while taking advantage of all the best features Hugo has to offer.
 
- ![](https://github.com/dewittn/hugo-html5up-alpha/blob/master/images/screenshot.png)
+![](https://github.com/dewittn/hugo-html5up-alpha/blob/master/images/screenshot.png)
 
- ## Features
+## Features
 
- Theme supports pages, page bundles, menus, sections, taxonomies, and base templates.
+- Blog
+- Sections
+- Taxonomies
+- Page bundles
+- Disqus Comments
+- Fontawesome icons
+- Menus and Submenus
+- OpenGraph Metadata
+- Customizable Homepage
 
- ## Demo
+## Demo
 
- https://hugo-html5up-alpha.nelsonroberto.com/
+This theme comes with a more comprehensive demo, which closely mimics the original [HTML5 UP](https://html5up.net/alpha) theme and demonstrates more of its features. You can view a fully functional demo at:
 
- ## Setup
+https://hugo-html5up-alpha.nelsonroberto.com/
 
- ### Configuration
+To run the demo locally use the following commands:
 
- See the demo's configuration as an example:
+```
+$ git clone https://github.com/dewittn/hugo-html5up-alpha/
+$ cd hugo-html5up-alpha/exampleSite
+$ hugo server --themesDir ../..
+```
 
- https://github.com/dewittn/hugo-html5up-alpha/blob/master/exampleSite/config/config.toml
 
- #### Hugo Internal Templates
+## Configuration
 
- The theme currently also supports the following ["internal templates" supplied by Hugo](https://gohugo.io/templates/internal/)
+See the demo's configuration as an example:
 
-  - [Disqus](https://gohugo.io/templates/internal/#disqus)
-  - [Google Analytics](https://gohugo.io/templates/internal/#configure-google-analytics)
+https://github.com/dewittn/hugo-html5up-alpha/blob/master/exampleSite/config.toml
 
- ### Cover Image
+### Homepage
+The homepage has five sections that are customizable and removable.
 
- The cover image URL is hard-coded, therefore to replace this add an image to the following location in your Hugo application:
+- Banner
+- Highlight
+- Features
+- Blog
+- Call to Action
 
- ```
- /static/images/banner.jpg
- ```
+Settings for the homepage come from `data\homepage.yml`.
 
- ## Development
+```
+### Banner ###
+banner:
+  enable: true
+  title: "Alpha"
+  content: "" # Change this if you want something other then the site description
+  buttons:
+    - title: "Sign Up"
+      link: "#"
+      class: "primary"
+    - title: "Learn More"
+      link: "#"
 
- ### Running Locally
+### Highlight ###
+highlight:
+  enable: true
+  header: "Introducing the ultimate mobile app <br /> for doing stuff with your phone"
+  content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br /> adipiscing nunc adipiscing. Condimentum turpis massa."
+  image: "images/pic01.jpg"
 
- ```
- $ git clone https://github.com/dewittn/hugo-html5up-alpha/
- $ cd hugo-html5up-alpha/exampleSite
- $ hugo server --themesDir ../..
- ```
+### Features ###
+features:
+  enable: true
+  rows:
+    - items:
+      - title: "Magna etiam"
+        icon: "fa-bolt"
+        accent: "accent2" #accent values are 1-8
+        content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
+      - title: "Ipsum dolor"
+        icon: "fa-chart-area"
+        accent: "accent3" #accent values are 1-8
+        content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
+    - items:
+        - title: "Sed feugiat"
+          icon: "fa-cloud"
+          accent: "accent4" #accent values are 1-8
+          content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
+        - title: "Enim phasellus"
+          icon: "fa-lock"
+          accent: "accent5" #accent values are 1-8
+          content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
 
- ## Original Theme Credits
+### Blog ###
+blog:
+  enable: true
+  # Leave header text blank to remove entire <section>
+  header: "Recent Posts"
+  buttonText: "Read More"
+  postCount: 2
 
-  - [Alpha by HTML5 UP](https://html5up.net/alpha)
+### Call to Action ###
+cta:
+  enable: true
+  header: "Sign up for beta access"
+  content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc."
+```
 
-  ## License
+### Global Banner
+The global header is also configurable by modifying the `globalheader.yml` file.
 
- This hugo theme is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).
+```
+title: "[Alpha](/) by HTML5 UP"
+button:
+  enable: true
+  title: "Sign up"
+  link: "#"
+```
 
- Read More - [LICENSE](LICENSE)
+### Cover Image
 
+The cover image URL is hard-coded, therefore to replace this add an image to the following location in your Hugo application:
+
+```
+/static/images/banner.jpg
+```
+
+### Comments powered by Disqus
+
+The comments section is **not** shown unless a Disqus code is set in the `config.toml` file.
+
+```
+disqusShortname = "XXX"
+```
+
+## Original Theme Credits
+
+- [Alpha by HTML5 UP](https://html5up.net/alpha)
+
+## License
+
+This theme is licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).
+
+Read More - [LICENSE](LICENSE)

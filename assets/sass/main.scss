@@ -13,6 +13,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// BannerURL
+$bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg") | absURL}}";
+
 // Breakpoints.
 
 	@include breakpoints((
@@ -1380,7 +1383,7 @@
 	#banner {
 		background-attachment:	scroll,							fixed;
 		background-color:		#666;
-		background-image:		url('images/overlay.png'),		url('../../images/banner.jpg');
+		background-image:		url($bannerURL);
 		background-position:	top left,						center center;
 		background-repeat:		repeat,							no-repeat;
 		background-size:		auto,							cover;

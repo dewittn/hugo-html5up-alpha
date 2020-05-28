@@ -1,6 +1,7 @@
 ### Banner ###
 banner:
   enable: true
+  image: #default is 'images/banner.jpg'
   title: "Alpha"
   content: "" # Change this if you want something other then the site description
   buttons:

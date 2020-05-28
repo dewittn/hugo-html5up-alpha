@@ -34,7 +34,9 @@
                             <h2>{{ .header | safeHTML }}</h2>
                             <p>{{ .content | safeHTML }}</p>
                         </header>
-                        <span class="image featured"><img src="{{ .image }}" alt="" /></span>
+                        {{ with .image }}
+                        <span class="image featured"><img src="{{ . }}" alt="" /></span>
+                        {{ end }}
                     </section>
                 {{ end }}
                 {{ end }}

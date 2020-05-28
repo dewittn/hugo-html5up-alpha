@@ -1,7 +1,9 @@
 {{ define "main" }}
   <header>
     <h2>{{ .Title }}</h2>
-    <p>{{ .Date.Format "Jan 2, 2006" }}</p>
+    {{ with .Date }}
+    <p>{{ .Format "Jan 2, 2006" }}</p>
+    {{ end }}
   </header>
   <div class="box">
     {{ with partial "bannerURL" . }}

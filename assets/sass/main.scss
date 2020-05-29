@@ -14,7 +14,7 @@
 */
 
 // BannerURL
-$bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg") | absURL}}";
+$bannerURL: "{{ (.Site.Data.homepage.banner.image | default "images/banner.jpg") }}";
 
 // Breakpoints.
 

@@ -5,7 +5,7 @@
         <ul>
             <li><a href="{{ .Site.BaseURL }}">Home</a></li>
             <li>
-                <a href="#" class="icon solid fa-angle-down">Layouts</a>
+                <a href="#" class="icon solid fa-angle-down">{{ .Site.Params.MenuTitle }}</a>
                 <ul>
                     {{- range .Site.Menus.main -}}
                         {{- if .HasChildren -}}

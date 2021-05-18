@@ -14,6 +14,7 @@ disqusShortname = ""
   copyright = "© Untitled. All rights reserved."
   design = "Design: [HTML5 UP](http://html5up.net/)"
   mainSections = ["blog"]
+  menuTitle = "Layouts"
 
 ### Footer Social Media Links ###
 [[params.share]]

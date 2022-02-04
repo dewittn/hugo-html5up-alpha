@@ -3,26 +3,30 @@
     <h1>{{ with .Site.Data.globalheader.title }}{{ . | markdownify }}{{else}}{{ .Site.Title }}{{end}}</h1>
     <nav id="nav">
         <ul>
-            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-            <li>
-                <a href="#" class="icon solid fa-angle-down">Layouts</a>
-                <ul>
-                    {{- range .Site.Menus.main -}}
-                        {{- if .HasChildren -}}
-                        <li>
-                            <a href="{{ .URL }}">{{ .Name }}</a>
-                            <ul>
-                                {{- range .Children -}}
-                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{- range .Site.Menus -}}
+                {{ range . }}
+                <li>
+                    <a href="{{ .URL }}" {{- if .HasChildren -}}class="icon solid fa-angle-down"{{- end -}} >{{ .Name }}</a>
+                    {{- if .HasChildren -}}
+                    <ul>
+                        {{- range .Children -}}
+                            <li>
+                                <a href="{{ .URL }}">{{ .Name }}</a>
+                                {{- if .HasChildren -}}
+                                    <ul>
+                                        {{- range .Children -}}
+                                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                        {{- end -}}
+                                    </ul>
                                 {{- end -}}
-                            </ul>
-                        </li>
-                        {{- else -}}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            </li>
                         {{- end -}}
+                    </ul>
                     {{- end -}}
-                </ul>
-            </li>
+                </li>
+                {{ end }}
+            {{- end -}}
+            
             {{ $button := .Site.Data.globalheader.button }}
             {{ if $button.enable }}
             <li><a href="{{ $button.link }}" class="button">{{ $button.title }}</a></li>

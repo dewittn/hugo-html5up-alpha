@@ -5,7 +5,7 @@ weight = 10
 
 ### {{< param title >}}
 
-This is **bold** and this is strong. This is _italic_ and this is {{<em>}}emphasized{{</em>}}. This is {{< sup >}}superscript{{< /sup >}} text and this is {{< sub >}}subscript{{< /sub >}} text. This is underlined and this is code: `for (;;) { ... }`. Finally, this is a [link]().
+This is **bold** and this is strong. This is _italic_ and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub >subscript</sub> text. This is <u>underlined</u> and this is code: `for (;;) { ... }`. Finally, this is a [link](#).
 
 ----
 

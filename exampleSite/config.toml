@@ -15,6 +15,27 @@ disqusShortname = ""
   design = "Design: [HTML5 UP](http://html5up.net/)"
   mainSections = ["blog"]
 
+## Config for extra markdown features
+[markup]
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [markup.goldmark.parser]
+    autoHeadingID = true
+    autoHeadingIDType = 'github'
+    [markup.goldmark.parser.attribute]
+      block = true
+      title = true
+      table = true
+  [markup.goldmark.renderer]
+    unsafe = true
+
 ### Footer Social Media Links ###
 [[params.share]]
 title = "facebook"

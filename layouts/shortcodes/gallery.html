@@ -1,7 +1,19 @@
-<div class="box alt">
-  <div class="row gtr-50 gtr-uniform">
-    {{ range $.Page.Resources.ByType "image" }}
-    <div class="col-4"><span class="image fit"><img src="{{ .Permalink }}" alt="" /></span></div>
-    {{ end }}
+{{ $scratch := newScratch }}
+{{range $.Page.Resources.ByType "image" }}
+  {{ $scratch.Add "images" (slice .Permalink) }}
+{{ else }}
+  {{ $scratch.Add "images" ($.Page.Param (.Get "name")) }}
+{{ end }}
+
+{{ with $scratch.Get "images" }}
+  <div class="box alt">
+    <div class="row gtr-50 gtr-uniform">
+      {{ range . }}
+        <div class="col-4">
+          <span class="image fit">            
+            <img src="{{ . }}" alt="" /></span>
+        </div>
+      {{ end }}
+    </div>
   </div>
-</div>
+{{ end }}

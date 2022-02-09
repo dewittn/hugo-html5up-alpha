@@ -5,10 +5,11 @@ name = "Hugo HTML5 UP Alpha"
 license = "Creative Commons"
 licenselink = "https://github.com/dewittn/hugo-html5up-alpha/blob/master/LICENSE"
 description = "A Hugo port of the static html template Alpha by HTML5 UP."
-homepage = "http://nelsonroberto.com/"
+homepage = "https://github.com/dewittn/hugo-html5up-alpha"
 tags = ["blog", "html5up","responsive","business"]
-features = ["blog",]
+features = ["blog","page bundle","forms"]
 min_version = "0.70.0"
+demosite = "https://hugo-html5up-alpha.nelsonroberto.com"
 
 [author]
   name = "Nelson/Roberto"

@@ -61,3 +61,8 @@
     name = "Option Four"
     url = "#"
     weight = 54
+  [[menu.layout]]
+    parent = "three"
+    identifier = "sub-sub-menu"
+    name = "sub-sub-menu"
+    url = "#"

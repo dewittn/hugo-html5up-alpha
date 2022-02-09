@@ -1,0 +1,10 @@
+<ul>
+    {{- range .Children -}}
+        <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{- if .HasChildren -}}
+                {{ partial "sub-menu" . }}
+            {{- end -}}
+        </li>
+    {{- end -}}
+</ul>

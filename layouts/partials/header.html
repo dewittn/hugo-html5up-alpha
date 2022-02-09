@@ -8,20 +8,7 @@
                 <li>
                     <a href="{{ .URL }}" {{- if .HasChildren -}}class="icon solid fa-angle-down"{{- end -}} >{{ .Name }}</a>
                     {{- if .HasChildren -}}
-                    <ul>
-                        {{- range .Children -}}
-                            <li>
-                                <a href="{{ .URL }}">{{ .Name }}</a>
-                                {{- if .HasChildren -}}
-                                    <ul>
-                                        {{- range .Children -}}
-                                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                                        {{- end -}}
-                                    </ul>
-                                {{- end -}}
-                            </li>
-                        {{- end -}}
-                    </ul>
+                        {{ partial "sub-menu" . }}
                     {{- end -}}
                 </li>
                 {{ end }}

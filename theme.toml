@@ -2,10 +2,10 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "Hugo HTML5 UP Alpha"
-license = "Creative Commons"
-licenselink = "https://github.com/dewittn/hugo-html5up-alpha/blob/master/LICENSE"
 description = "A Hugo port of the static html template Alpha by HTML5 UP."
 homepage = "https://github.com/dewittn/hugo-html5up-alpha"
+license = "Creative Commons"
+licenselink = "https://github.com/dewittn/hugo-html5up-alpha/blob/master/LICENSE"
 tags = ["blog", "html5up","responsive","business"]
 features = ["blog","page bundle","forms"]
 min_version = "0.70.0"

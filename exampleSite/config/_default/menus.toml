@@ -1,0 +1,77 @@
+# For Pages the .RelPermalink must match the menu .URL
+# For sections the name/directory must match the menu .Identifier
+
+## Top level menu
+## They do not contain a `parent` setting
+[[home]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 10
+[[layout]]
+  identifier = "layout"
+  name = "Layout"
+  url = "#"
+
+## Menus items for Layout
+## These are displayed when hovering over the `Layout` menu
+[[layout]]
+  parent = "layout"
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+[[layout]]
+  parent = "layout"
+  identifier = "elements"
+  name = "Elements"
+  url = "/elements/"
+  weight = 30
+[[layout]]
+  parent = "layout"
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 40
+[[layout]]
+  parent = "layout"
+  identifier = "submenu"
+  name = "Submenu"
+  url = "#"
+  weight = 50
+
+## Sub-menu items
+## Items need to be listed as part of `[[menu.layout]]`,
+## even though they are displayed when hovering over `sub-menu`
+[[layout]]
+  parent = "submenu"
+  identifier = "one"
+  name = "Option One"
+  url = "#"
+  weight = 51
+[[layout]]
+  parent = "submenu"
+  identifier = "two"
+  name = "Option Two"
+  url = "#"
+  weight = 52
+[[layout]]
+  parent = "submenu"
+  identifier = "three"
+  name = "Option Three"
+  url = "#"
+  weight = 53
+[[layout]]
+  parent = "submenu"
+  identifier = "four"
+  name = "Option Four"
+  url = "#"
+  weight = 54
+
+## Sub-sub-menu
+## Sub-menus are generated recursively so you can nest as much as you want,
+## as long as all items are part of the same menu group
+[[layout]]
+  parent = "three"
+  identifier = "sub-sub-menu"
+  name = "sub-sub-menu"
+  url = "#"

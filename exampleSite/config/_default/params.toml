@@ -1,0 +1,26 @@
+## Opengraph settings
+title = "Alpha by HTML5 UP"
+description = "Another fine responsive site template freebie by HTML5 UP."
+images = ["images/pic01.jpg"]
+
+## Theme Params
+author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
+copyright = "© Untitled. All rights reserved."
+design = "Design: [HTML5 UP](http://html5up.net/)"
+mainSections = ["blog"]
+
+### Footer Social Media Links ###
+[[share]]
+title = "facebook"
+icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
+link = "https://www.facebook.com/"
+
+[[share]]
+title = "twitter"
+icon = "fa-twitter"
+link = "https://twitter.com/"
+
+[[share]]
+title = "linkedin"
+icon = "fa-linkedin"
+link = "https://www.linkedin.com"

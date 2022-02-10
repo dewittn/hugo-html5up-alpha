@@ -1,0 +1,7 @@
+<div class="col-3 col-6-narrower col-12-mobilep">
+  {{ if .Get "markdown" }}
+    {{ .Inner | markdownify }}
+  {{ else }}
+    {{ .Inner }}
+  {{ end }}
+</div>

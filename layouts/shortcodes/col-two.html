@@ -1,7 +1,3 @@
 <div class="col-6 col-12-mobilep">
-  {{ if .Get "markdown" }}
-    {{ .Inner | markdownify }}
-  {{ else }}
-    {{ .Inner }}
-  {{ end }}
+  {{ .Inner }}
 </div>

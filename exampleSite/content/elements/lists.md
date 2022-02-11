@@ -6,7 +6,10 @@ weight = 20
 ### {{< param title >}}
 
 {{< columns >}}
-{{< col-two markdown="true" >}}
+
+{{< col-two >}}
+{{< markdown >}}
+
 #### Unordered 
 
 - Dolor pulvinar etiam.
@@ -21,9 +24,11 @@ weight = 20
 - Felis feugiat dolore viverra.
 - Dolor pulvinar etiam.
 {.alt}
-
+{{< /markdown >}}
 {{< /col-two >}}
-{{< col-two markdown="true">}}
+
+{{< col-two >}}
+{{< markdown >}}
 #### Ordered
 1. Dolor pulvinar etiam.
 2. Etiam vel felis at viverra.
@@ -32,6 +37,7 @@ weight = 20
 5. Felis enim et tempus.
 
 #### Icons
+{{< /markdown >}}
 <ul class="icons">
     <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
     <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>

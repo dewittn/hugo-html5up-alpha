@@ -60,16 +60,24 @@ weight = 20
 {{< /button-group >}}
 
 {{< columns >}}
-{{< col-two >}}
+{{< col-four >}}
 {{< button-group class="stacked" >}}
     {{< button title="Primary" link= "#actions" class="primary" >}}
     {{< button title="Default" link= "#actions" class="" >}}
     {{< button title="Alt" link= "#actions" class="alt" >}}
 {{< /button-group >}}
-{{< /col-two >}}
+{{< /col-four >}}
 
 {{< col-four >}}
-{{< button-group class="stacked fit" >}}
+{{< button-group class="stacked" >}}
+    {{< button title="Small" link= "#actions" class="primary small" >}}
+    {{< button title="Small" link= "#actions" class="small" >}}
+    {{< button title="Small" link= "#actions" class="alt small" >}}
+{{< /button-group >}}
+{{< /col-four >}}
+
+{{< col-four >}}
+{{< button-group class="stacked" >}}
     {{< button title="Primary" link= "#actions" class="primary fit" >}}
     {{< button title="Default" link= "#actions" class="fit" >}}
     {{< button title="Default" link= "#actions" class="alt fit" >}}
@@ -77,10 +85,10 @@ weight = 20
 {{< /col-four >}}
 
 {{< col-four >}}
-{{< button-group class="stacked fit" >}}
-    {{< button title="Small" link= "#actions" class="primary small" >}}
-    {{< button title="Small" link= "#actions" class="small" >}}
-    {{< button title="Small" link= "#actions" class="small alt" >}}
+{{< button-group class="stacked" >}}
+    {{< button title="Small" link= "#actions" class="primary small fit" >}}
+    {{< button title="Small" link= "#actions" class="small fit" >}}
+    {{< button title="Small" link= "#actions" class="alt small fit" >}}
 {{< /button-group >}}
 {{< /col-four >}}
 

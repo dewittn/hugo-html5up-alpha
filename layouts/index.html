@@ -71,7 +71,7 @@
                   <div class="row">
                       {{ range first .postCount (where site.RegularPages "Type" "in" site.Params.mainSections) }}
                           <div class="col-6 col-12-narrower">
-                              <section class="box special">
+                              <section class="box special">                                  
                                   {{ with partial "bannerURL" . }}
                                   <span class="image featured"><img src="{{ . }}" alt="" /></span>
                                   {{ end }}

@@ -1,7 +1,11 @@
 {{ $bannerURL := "" }}
 {{ if .Params.image }}
   {{ $bannerURL = (.Params.image | relURL) }}
-{{ else if .Resources.GetMatch "banner.jpg" }}
-  {{ $bannerURL = (.Resources.GetMatch "banner.jpg").Permalink }}
+{{ else }}
+  {{ with first 1 (.Resources.ByType "image") }}
+      {{ range . }}
+        {{ $bannerURL = .RelPermalink  }}
+      {{ end }}
+  {{ end }}
 {{ end }}
 {{ return $bannerURL }}

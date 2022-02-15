@@ -2,7 +2,4 @@
 {{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS $options }}
 {{/* Uncomment to use main.css */}}
 {{/* $style := resources.Get "sass/main.css" */}}
-<title>{{ if .IsHome }}{{ .Site.Params.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />

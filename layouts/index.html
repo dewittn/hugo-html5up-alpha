@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {{- partial "head.html" . -}}
-        {{ template "_internal/opengraph.html" . }}
+        {{- partial "head/metadata.html" . -}}
+        {{- partial "head/css.html" . -}}
+        {{- partial "head/rss.html" . -}}
+        {{- template "_internal/opengraph.html" . -}}
+        {{- template "_internal/twitter_cards.html" . -}}
     </head>
     <body class="landing is-preload">
         <div id="page-wrapper">

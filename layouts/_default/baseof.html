@@ -13,8 +13,8 @@
             <section id="main" class="container {{ with .Params.size }}{{ . }}{{ end }}">
                 {{- block "main" . }}{{- end }}
             </section>
-            {{- partial "footer.html" . -}}
+            {{- partial "footer/footer.html" . -}}
         </div>
-        {{- partial "scripts.html" . -}}
+        {{- partial "footer/scripts.html" . -}}
     </body>
 </html>

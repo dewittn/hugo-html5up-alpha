@@ -4,14 +4,14 @@
 
 	/// Breakpoints.
 	/// @var {list}
-	$breakpoints: ();
+	$breakpoints: () !global;
 
 // Mixins.
 
 	/// Sets breakpoints.
 	/// @param {map} $x Breakpoints.
 	@mixin breakpoints($x: ()) {
-		$breakpoints: $x ;
+		$breakpoints: $x !global;
 	}
 
 	/// Wraps @content in a @media block targeting a specific orientation.

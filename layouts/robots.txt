@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+{{ range where .Pages "Params.disallow" true }}
+Disallow: {{- .RelPermalink -}}
+{{ end }}
+
+Sitemap: {{ absURL "sitemap.xml" }}

@@ -4,3 +4,5 @@ languageCode = "en-us"
 baseURL = "http://localhost:1313/"
 theme = "hugo-html5up-alpha"
 disqusShortname = ""
+enableRobotsTXT= true
+# disableKinds = ["taxonomy", "term", "tag"]

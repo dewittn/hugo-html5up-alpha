@@ -4,6 +4,7 @@
         {{- partial "head/metadata.html" . -}}
         {{- partial "head/css.html" . -}}
         {{- partial "head/rss.html" . -}}
+        {{- partial "head/scripts.html" . -}}
         {{- template "_internal/opengraph.html" . -}}
         {{- template "_internal/twitter_cards.html" . -}}
     </head>
@@ -118,6 +119,5 @@
 
             {{- partial "footer/footer.html" . -}}
         </div>
-        {{- partial "footer/scripts.html" . -}}
     </body>
 </html>
